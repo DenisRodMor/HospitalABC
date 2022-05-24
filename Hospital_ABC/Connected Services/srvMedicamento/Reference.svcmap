@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c5104e1e-31f4-4739-82ca-813549f8875a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:63539/srvMedicamento.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="srvMedicamento.wsdl" MetadataType="Wsdl" ID="ae2ddc72-4e58-4528-8719-6297c62fa8ea" SourceId="1" SourceUrl="http://localhost:63539/srvMedicamento.svc?wsdl" />
+    <MetadataFile FileName="srvMedicamento.xsd" MetadataType="Schema" ID="51149b50-7041-41f6-b00a-4a429222a0e4" SourceId="1" SourceUrl="http://localhost:63539/srvMedicamento.svc?xsd=xsd2" />
+    <MetadataFile FileName="srvMedicamento.disco" MetadataType="Disco" ID="da6e9123-15d4-4b11-9453-cee2f6280975" SourceId="1" SourceUrl="http://localhost:63539/srvMedicamento.svc?disco" />
+    <MetadataFile FileName="srvMedicamento1.xsd" MetadataType="Schema" ID="7140dd30-844b-406c-a4f6-c00b5bcb1f5b" SourceId="1" SourceUrl="http://localhost:63539/srvMedicamento.svc?xsd=xsd1" />
+    <MetadataFile FileName="srvMedicamento2.xsd" MetadataType="Schema" ID="c8a52c4e-6aea-42a5-beb9-1c6164267bff" SourceId="1" SourceUrl="http://localhost:63539/srvMedicamento.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

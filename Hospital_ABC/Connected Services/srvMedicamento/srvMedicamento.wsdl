@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="srvMedicamento" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:63539/srvMedicamento.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:63539/srvMedicamento.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:63539/srvMedicamento.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Entidades" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IsrvMedicamento_recMedicamentos_PA_InputMessage">
+    <wsdl:part name="parameters" element="tns:recMedicamentos_PA" />
+  </wsdl:message>
+  <wsdl:message name="IsrvMedicamento_recMedicamentos_PA_OutputMessage">
+    <wsdl:part name="parameters" element="tns:recMedicamentos_PAResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsrvMedicamento_recMedicamentosXID_PA_InputMessage">
+    <wsdl:part name="parameters" element="tns:recMedicamentosXID_PA" />
+  </wsdl:message>
+  <wsdl:message name="IsrvMedicamento_recMedicamentosXID_PA_OutputMessage">
+    <wsdl:part name="parameters" element="tns:recMedicamentosXID_PAResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsrvMedicamento_insMedicamentos_PA_InputMessage">
+    <wsdl:part name="parameters" element="tns:insMedicamentos_PA" />
+  </wsdl:message>
+  <wsdl:message name="IsrvMedicamento_insMedicamentos_PA_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insMedicamentos_PAResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsrvMedicamento_modMedicamentos_PA_InputMessage">
+    <wsdl:part name="parameters" element="tns:modMedicamentos_PA" />
+  </wsdl:message>
+  <wsdl:message name="IsrvMedicamento_modMedicamentos_PA_OutputMessage">
+    <wsdl:part name="parameters" element="tns:modMedicamentos_PAResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsrvMedicamento_delMedicamentos_PA_InputMessage">
+    <wsdl:part name="parameters" element="tns:delMedicamentos_PA" />
+  </wsdl:message>
+  <wsdl:message name="IsrvMedicamento_delMedicamentos_PA_OutputMessage">
+    <wsdl:part name="parameters" element="tns:delMedicamentos_PAResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IsrvMedicamento">
+    <wsdl:operation name="recMedicamentos_PA">
+      <wsdl:input wsaw:Action="http://tempuri.org/IsrvMedicamento/recMedicamentos_PA" message="tns:IsrvMedicamento_recMedicamentos_PA_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IsrvMedicamento/recMedicamentos_PAResponse" message="tns:IsrvMedicamento_recMedicamentos_PA_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="recMedicamentosXID_PA">
+      <wsdl:input wsaw:Action="http://tempuri.org/IsrvMedicamento/recMedicamentosXID_PA" message="tns:IsrvMedicamento_recMedicamentosXID_PA_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IsrvMedicamento/recMedicamentosXID_PAResponse" message="tns:IsrvMedicamento_recMedicamentosXID_PA_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insMedicamentos_PA">
+      <wsdl:input wsaw:Action="http://tempuri.org/IsrvMedicamento/insMedicamentos_PA" message="tns:IsrvMedicamento_insMedicamentos_PA_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IsrvMedicamento/insMedicamentos_PAResponse" message="tns:IsrvMedicamento_insMedicamentos_PA_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="modMedicamentos_PA">
+      <wsdl:input wsaw:Action="http://tempuri.org/IsrvMedicamento/modMedicamentos_PA" message="tns:IsrvMedicamento_modMedicamentos_PA_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IsrvMedicamento/modMedicamentos_PAResponse" message="tns:IsrvMedicamento_modMedicamentos_PA_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="delMedicamentos_PA">
+      <wsdl:input wsaw:Action="http://tempuri.org/IsrvMedicamento/delMedicamentos_PA" message="tns:IsrvMedicamento_delMedicamentos_PA_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IsrvMedicamento/delMedicamentos_PAResponse" message="tns:IsrvMedicamento_delMedicamentos_PA_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IsrvMedicamento" type="tns:IsrvMedicamento">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="recMedicamentos_PA">
+      <soap:operation soapAction="http://tempuri.org/IsrvMedicamento/recMedicamentos_PA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="recMedicamentosXID_PA">
+      <soap:operation soapAction="http://tempuri.org/IsrvMedicamento/recMedicamentosXID_PA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insMedicamentos_PA">
+      <soap:operation soapAction="http://tempuri.org/IsrvMedicamento/insMedicamentos_PA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modMedicamentos_PA">
+      <soap:operation soapAction="http://tempuri.org/IsrvMedicamento/modMedicamentos_PA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="delMedicamentos_PA">
+      <soap:operation soapAction="http://tempuri.org/IsrvMedicamento/delMedicamentos_PA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="srvMedicamento">
+    <wsdl:port name="BasicHttpBinding_IsrvMedicamento" binding="tns:BasicHttpBinding_IsrvMedicamento">
+      <soap:address location="http://localhost:63539/srvMedicamento.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

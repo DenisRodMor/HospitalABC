@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3b0db69a9d674b3fba4831985c70a9e7" Name="Diagram1" ZoomLevel="72">
+        <EntityTypeShape EntityType="shoppinggModel.admin" Width="1.5" PointX="15.875" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoppinggModel.category" Width="1.5" PointX="5.375" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoppinggModel.orders" Width="1.5" PointX="6.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoppinggModel.ordertrackhistory" Width="1.5" PointX="11.125" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoppinggModel.productreviews" Width="1.5" PointX="1.5" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoppinggModel.products" Width="1.5" PointX="2.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoppinggModel.subcategory" Width="1.5" PointX="8.875" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoppinggModel.sysdiagrams" Width="1.5" PointX="11.875" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoppinggModel.userlog" Width="1.5" PointX="14" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoppinggModel.users" Width="1.5" PointX="15.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="shoppinggModel.wishlist" Width="1.5" PointX="10.5" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="shoppinggModel.FK_products_category" ManuallyRouted="false" />
+        <AssociationConnector Association="shoppinggModel.FK_subcategory_category" ManuallyRouted="false" />
+        <AssociationConnector Association="shoppinggModel.FK_orders_products" ManuallyRouted="false" />
+        <AssociationConnector Association="shoppinggModel.FK_orders_users" ManuallyRouted="false" />
+        <AssociationConnector Association="shoppinggModel.FK_ordertrackhistory_orders" ManuallyRouted="false" />
+        <AssociationConnector Association="shoppinggModel.FK_productreviews_products" ManuallyRouted="false" />
+        <AssociationConnector Association="shoppinggModel.FK_wishlist_products" ManuallyRouted="false" />
+        <AssociationConnector Association="shoppinggModel.FK_wishlist_users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

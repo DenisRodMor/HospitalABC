@@ -1,0 +1,43 @@
+﻿@model Entidades.PA_Diagnostico_MostrarDetallexid_Result
+
+@{
+//ViewBag.Title = "DetallePacientes_PA";
+}
+
+<h2>Detalle Diagnostico</h2>
+
+<div>
+    @*<h4>PA_Diagnostico_MostrarDetallexid_Result</h4>*@
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdDiagnostico)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdDiagnostico)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdCita)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdCita)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Observaciones)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Observaciones)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Actualizar", "ModificaDiagnostico_PA", new { id = Model.IdDiagnostico }) |
+
+    @Html.ActionLink("Volver", "recDiagnostico_PA")
+</p>

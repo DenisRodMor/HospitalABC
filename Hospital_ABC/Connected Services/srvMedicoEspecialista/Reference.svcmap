@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="df27f079-05af-41e2-a9fc-e72eee42b5f6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:63539/srvMedicoEspecialista.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="srvMedicoEspecialista.xsd" MetadataType="Schema" ID="195435fc-9b43-4e70-a411-4471ea1a9404" SourceId="1" SourceUrl="http://localhost:63539/srvMedicoEspecialista.svc?xsd=xsd1" />
+    <MetadataFile FileName="srvMedicoEspecialista.disco" MetadataType="Disco" ID="6994d333-9d17-4e05-a75b-af688fe3adfc" SourceId="1" SourceUrl="http://localhost:63539/srvMedicoEspecialista.svc?disco" />
+    <MetadataFile FileName="srvMedicoEspecialista1.xsd" MetadataType="Schema" ID="104f5639-cedc-476d-84f1-688d88f299a2" SourceId="1" SourceUrl="http://localhost:63539/srvMedicoEspecialista.svc?xsd=xsd2" />
+    <MetadataFile FileName="srvMedicoEspecialista.wsdl" MetadataType="Wsdl" ID="6ede1fcd-f175-488a-b301-8b9310713926" SourceId="1" SourceUrl="http://localhost:63539/srvMedicoEspecialista.svc?wsdl" />
+    <MetadataFile FileName="srvMedicoEspecialista2.xsd" MetadataType="Schema" ID="3b2386f1-2237-4eb4-bbb6-2c8dab0592c7" SourceId="1" SourceUrl="http://localhost:63539/srvMedicoEspecialista.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

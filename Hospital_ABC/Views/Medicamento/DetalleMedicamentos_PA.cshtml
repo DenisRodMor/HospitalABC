@@ -1,0 +1,51 @@
+﻿@model Entidades.PA_Medicamentos_MostrarDetallexid_Result
+
+@{
+//ViewBag.Title = "DetalleMedicamentos_PA";
+}
+
+<h2>Detalle Medicamentos</h2>
+
+<div>
+    @*<h4>PA_Medicamentos_MostrarDetallexid_Result</h4>*@
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdMedicamento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdMedicamento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdCita)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdCita)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cantidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cantidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Instrucciones)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Instrucciones)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Actualizar", "ModificaMedicamentos_PA", new { id = Model.IdMedicamento }) |
+
+    @Html.ActionLink("Volver", "recMedicamentos_PA")
+</p>

@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Entidades.PA_Especialidad_MostrarDetalle_Result>
+
+@{
+    ViewBag.Title = "Especialidad";
+}
+
+<h2>Lista Especialidades</h2>
+
+<p>
+    @Html.ActionLink("Nuevo", "AgregaEspecialidad_PA")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IdEspecialidades)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoEspecialidad)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdEspecialidades)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoEspecialidad)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "ModificaEspecialidad_PA", new { id = item.IdEspecialidades })
+            @Html.ActionLink("Detalles", "DetalleEspecialidad_PA", new { id = item.IdEspecialidades })
+            @Html.ActionLink("Eliminar", "EliminarEspecialidad_PA", new { id = item.IdEspecialidades })
+        </td>
+    </tr>
+}
+
+</table>

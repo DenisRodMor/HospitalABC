@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4fbcda6e-d759-4905-b655-0f26e81665e2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:63539/srvEspecialidad.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="srvEspecialidad.xsd" MetadataType="Schema" ID="0f554641-d790-4453-8492-0111733f7bfd" SourceId="1" SourceUrl="http://localhost:63539/srvEspecialidad.svc?xsd=xsd1" />
+    <MetadataFile FileName="srvEspecialidad.disco" MetadataType="Disco" ID="d75904e6-ddc5-4ddd-9139-be9e7a48224f" SourceId="1" SourceUrl="http://localhost:63539/srvEspecialidad.svc?disco" />
+    <MetadataFile FileName="srvEspecialidad.wsdl" MetadataType="Wsdl" ID="72c83a99-5e45-4aff-b6c2-61d2700c3a2d" SourceId="1" SourceUrl="http://localhost:63539/srvEspecialidad.svc?wsdl" />
+    <MetadataFile FileName="srvEspecialidad1.xsd" MetadataType="Schema" ID="ff680486-d4a7-4d69-bd29-c1ad54ba4785" SourceId="1" SourceUrl="http://localhost:63539/srvEspecialidad.svc?xsd=xsd0" />
+    <MetadataFile FileName="srvEspecialidad2.xsd" MetadataType="Schema" ID="19685d13-4044-43e7-b9cc-1dc531d5230a" SourceId="1" SourceUrl="http://localhost:63539/srvEspecialidad.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

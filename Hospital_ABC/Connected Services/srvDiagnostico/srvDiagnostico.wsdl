@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="srvDiagnostico" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:63539/srvDiagnostico.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:63539/srvDiagnostico.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:63539/srvDiagnostico.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Entidades" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IsrvDiagnostico_recDiagnostico_PA_InputMessage">
+    <wsdl:part name="parameters" element="tns:recDiagnostico_PA" />
+  </wsdl:message>
+  <wsdl:message name="IsrvDiagnostico_recDiagnostico_PA_OutputMessage">
+    <wsdl:part name="parameters" element="tns:recDiagnostico_PAResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsrvDiagnostico_recDiagnosticoXID_PA_InputMessage">
+    <wsdl:part name="parameters" element="tns:recDiagnosticoXID_PA" />
+  </wsdl:message>
+  <wsdl:message name="IsrvDiagnostico_recDiagnosticoXID_PA_OutputMessage">
+    <wsdl:part name="parameters" element="tns:recDiagnosticoXID_PAResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsrvDiagnostico_insDiagnostico_PA_InputMessage">
+    <wsdl:part name="parameters" element="tns:insDiagnostico_PA" />
+  </wsdl:message>
+  <wsdl:message name="IsrvDiagnostico_insDiagnostico_PA_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insDiagnostico_PAResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsrvDiagnostico_modDiagnostico_PA_InputMessage">
+    <wsdl:part name="parameters" element="tns:modDiagnostico_PA" />
+  </wsdl:message>
+  <wsdl:message name="IsrvDiagnostico_modDiagnostico_PA_OutputMessage">
+    <wsdl:part name="parameters" element="tns:modDiagnostico_PAResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsrvDiagnostico_delDiagnostico_PA_InputMessage">
+    <wsdl:part name="parameters" element="tns:delDiagnostico_PA" />
+  </wsdl:message>
+  <wsdl:message name="IsrvDiagnostico_delDiagnostico_PA_OutputMessage">
+    <wsdl:part name="parameters" element="tns:delDiagnostico_PAResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IsrvDiagnostico">
+    <wsdl:operation name="recDiagnostico_PA">
+      <wsdl:input wsaw:Action="http://tempuri.org/IsrvDiagnostico/recDiagnostico_PA" message="tns:IsrvDiagnostico_recDiagnostico_PA_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IsrvDiagnostico/recDiagnostico_PAResponse" message="tns:IsrvDiagnostico_recDiagnostico_PA_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="recDiagnosticoXID_PA">
+      <wsdl:input wsaw:Action="http://tempuri.org/IsrvDiagnostico/recDiagnosticoXID_PA" message="tns:IsrvDiagnostico_recDiagnosticoXID_PA_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IsrvDiagnostico/recDiagnosticoXID_PAResponse" message="tns:IsrvDiagnostico_recDiagnosticoXID_PA_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insDiagnostico_PA">
+      <wsdl:input wsaw:Action="http://tempuri.org/IsrvDiagnostico/insDiagnostico_PA" message="tns:IsrvDiagnostico_insDiagnostico_PA_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IsrvDiagnostico/insDiagnostico_PAResponse" message="tns:IsrvDiagnostico_insDiagnostico_PA_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="modDiagnostico_PA">
+      <wsdl:input wsaw:Action="http://tempuri.org/IsrvDiagnostico/modDiagnostico_PA" message="tns:IsrvDiagnostico_modDiagnostico_PA_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IsrvDiagnostico/modDiagnostico_PAResponse" message="tns:IsrvDiagnostico_modDiagnostico_PA_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="delDiagnostico_PA">
+      <wsdl:input wsaw:Action="http://tempuri.org/IsrvDiagnostico/delDiagnostico_PA" message="tns:IsrvDiagnostico_delDiagnostico_PA_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IsrvDiagnostico/delDiagnostico_PAResponse" message="tns:IsrvDiagnostico_delDiagnostico_PA_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IsrvDiagnostico" type="tns:IsrvDiagnostico">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="recDiagnostico_PA">
+      <soap:operation soapAction="http://tempuri.org/IsrvDiagnostico/recDiagnostico_PA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="recDiagnosticoXID_PA">
+      <soap:operation soapAction="http://tempuri.org/IsrvDiagnostico/recDiagnosticoXID_PA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insDiagnostico_PA">
+      <soap:operation soapAction="http://tempuri.org/IsrvDiagnostico/insDiagnostico_PA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modDiagnostico_PA">
+      <soap:operation soapAction="http://tempuri.org/IsrvDiagnostico/modDiagnostico_PA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="delDiagnostico_PA">
+      <soap:operation soapAction="http://tempuri.org/IsrvDiagnostico/delDiagnostico_PA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="srvDiagnostico">
+    <wsdl:port name="BasicHttpBinding_IsrvDiagnostico" binding="tns:BasicHttpBinding_IsrvDiagnostico">
+      <soap:address location="http://localhost:63539/srvDiagnostico.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

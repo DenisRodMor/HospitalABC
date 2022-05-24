@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="fb5fc470-22d8-4fb9-99a0-da4b2b0eeaea" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:63539/srvPacientes.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="srvPacientes.wsdl" MetadataType="Wsdl" ID="ca1e7763-88de-4e40-b714-d57bcdbfb5f8" SourceId="1" SourceUrl="http://localhost:63539/srvPacientes.svc?wsdl" />
+    <MetadataFile FileName="srvPacientes.xsd" MetadataType="Schema" ID="a68262b3-3a49-4f41-a927-22054a12aabd" SourceId="1" SourceUrl="http://localhost:63539/srvPacientes.svc?xsd=xsd2" />
+    <MetadataFile FileName="srvPacientes1.xsd" MetadataType="Schema" ID="6f1fcdf0-8a6b-455a-a381-bb000e4821a6" SourceId="1" SourceUrl="http://localhost:63539/srvPacientes.svc?xsd=xsd0" />
+    <MetadataFile FileName="srvPacientes.disco" MetadataType="Disco" ID="10afcc01-87b6-4c46-a2c8-b1ce8b180116" SourceId="1" SourceUrl="http://localhost:63539/srvPacientes.svc?disco" />
+    <MetadataFile FileName="srvPacientes2.xsd" MetadataType="Schema" ID="a2a4de7a-9fbc-4356-87e3-4387bcbf1cff" SourceId="1" SourceUrl="http://localhost:63539/srvPacientes.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

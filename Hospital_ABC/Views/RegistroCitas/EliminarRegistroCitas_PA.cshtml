@@ -1,0 +1,78 @@
+﻿@model Entidades.PA_RegistroCitas_MostrarDetallexid_Result
+
+@{
+    @*ViewBag.Title = "EliminarRegistroCitas_PA";*@
+}
+
+<h2>Eliminar Registro Citas</h2>
+
+<h3>Esta seguro(a) de que desea eliminar el registro?</h3>
+<div>
+    @*<h4>PA_RegistroCitas_MostrarDetallexid_Result</h4>*@
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdCita)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdCita)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdPaciente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdPaciente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaCita)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaCita)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdmedicoEspecialista)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdmedicoEspecialista)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdEspecialidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdEspecialidad)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm("AccionesEntidades", "RegistroCitas", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        @Html.HiddenFor(model => model.IdCita)
+
+
+<div class="form-actions no-color">
+    <div class="col-md-offset-2 col-md-10">
+        <button type="submit" name="submitButton" value="Eliminar"
+                class="btn btn-primary" title="Eliminar"
+                data-toggle="tooltip" data-container="body"
+                data-placement="right">
+            Eliminar
+
+
+        </button>
+
+    </div>
+    @Html.ActionLink("Volver", "recPacientes_PA")
+</div>
+    }
+</div>

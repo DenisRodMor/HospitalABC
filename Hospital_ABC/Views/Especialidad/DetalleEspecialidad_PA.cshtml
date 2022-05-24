@@ -1,0 +1,35 @@
+﻿@model Entidades.PA_Especialidad_MostrarDetallexid_Result
+
+@{
+//ViewBag.Title = "DetalleEspecialidad_PA";
+}
+
+<h2>Detalle Especialidad</h2>
+
+<div>
+    @*<h4>PA_Especialidad_MostrarDetallexid_Result</h4>*@
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdEspecialidades)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdEspecialidades)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoEspecialidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoEspecialidad)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Actualizar", "ModificaEspecialidad_PA", new { id = Model.IdEspecialidades }) |
+
+    @Html.ActionLink("Volver", "recEspecialidad_PA")
+</p>

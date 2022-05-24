@@ -1,0 +1,61 @@
+﻿@model Entidades.PA_MedicoEspecialista_MostrarDetallexid_Result
+
+@{
+    //ViewBag.Title = "EliminarMedicoEspecialista_PA";
+}
+
+<h2>Eliminar Medico Especialista</h2>
+
+<h3>Esta seguro(a) de que desea eliminar el registro?</h3>
+<div>
+    @*<h4>PA_MedicoEspecialista_MostrarDetallexid_Result</h4>*@
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdmedicoEspecialista)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdmedicoEspecialista)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdEspecialidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdEspecialidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm("AccionesEntidades", "Pacientes", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        @Html.HiddenFor(model => model.IdmedicoEspecialista)
+
+<div class="form-actions no-color">
+    <div class="col-md-offset-2 col-md-10">
+        <button type="submit" name="submitButton" value="Eliminar"
+                class="btn btn-primary" title="Eliminar"
+                data-toggle="tooltip" data-container="body"
+                data-placement="right">
+            Eliminar
+
+
+        </button>
+
+    </div>
+    @Html.ActionLink("Volver", "recMedicoEspecialista_PA")
+</div>
+    }
+</div>

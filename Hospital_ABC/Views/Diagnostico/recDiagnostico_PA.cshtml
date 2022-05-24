@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Entidades.PA_Diagnostico_MostrarDetalle_Result>
+
+@{
+    ViewBag.Title = "Diagnostico";
+}
+
+<h2>Diagnosticos Medicos</h2>
+
+<p>
+    @Html.ActionLink("Nuevo", "AgregaDiagnostico_PA")
+</p>
+<table class="table">
+    <tr>
+        @*<th>
+            @Html.DisplayNameFor(model => model.IdDiagnostico)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.IdCita)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Observaciones)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.IdDiagnostico)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.IdCita)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Observaciones)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "ModificaDiagnostico_PA", new { id = item.IdDiagnostico })
+            @Html.ActionLink("Detalles", "DetalleDiagnostico_PA", new { id = item.IdDiagnostico })
+            @Html.ActionLink("Eliminar", "EliminarDiagnostico_PA", new { id = item.IdDiagnostico })
+        </td>
+    </tr>
+}
+
+</table>

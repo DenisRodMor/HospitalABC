@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Entidades" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Entidades" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfPA_Pacientes_MostrarDetalle_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PA_Pacientes_MostrarDetalle_Result" nillable="true" type="tns:PA_Pacientes_MostrarDetalle_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPA_Pacientes_MostrarDetalle_Result" nillable="true" type="tns:ArrayOfPA_Pacientes_MostrarDetalle_Result" />
+  <xs:complexType name="PA_Pacientes_MostrarDetalle_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Correo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Direccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaAdmision" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaNacimiento" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdPaciente" type="xs:int" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimerApellido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SegundoApellido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sexo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefono" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PA_Pacientes_MostrarDetalle_Result" nillable="true" type="tns:PA_Pacientes_MostrarDetalle_Result" />
+  <xs:complexType name="PA_Pacientes_MostrarDetallexid_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Correo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Direccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaAdmision" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaNacimiento" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IDPaciente" type="xs:int" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimerApellido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SegundoApellido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sexo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefono" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PA_Pacientes_MostrarDetallexid_Result" nillable="true" type="tns:PA_Pacientes_MostrarDetallexid_Result" />
+  <xs:complexType name="Paciente">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Correo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Direccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaAdmision" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FechaNacimiento" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdPaciente" type="xs:int" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimerApellido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RegistroCitas" nillable="true" type="tns:ArrayOfRegistroCitas" />
+      <xs:element minOccurs="0" name="SegundoApellido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sexo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefono" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Paciente" nillable="true" type="tns:Paciente" />
+  <xs:complexType name="ArrayOfRegistroCitas">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RegistroCitas" nillable="true" type="tns:RegistroCitas" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRegistroCitas" nillable="true" type="tns:ArrayOfRegistroCitas" />
+  <xs:complexType name="RegistroCitas">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Diagnostico" nillable="true" type="tns:ArrayOfDiagnostico" />
+      <xs:element minOccurs="0" name="FechaCita" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IdCita" type="xs:int" />
+      <xs:element minOccurs="0" name="IdEspecialidad" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="IdPaciente" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="IdmedicoEspecialista" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Medicamento" nillable="true" type="tns:ArrayOfMedicamento" />
+      <xs:element minOccurs="0" name="MedicoEspecialista" nillable="true" type="tns:MedicoEspecialista" />
+      <xs:element minOccurs="0" name="Paciente" nillable="true" type="tns:Paciente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RegistroCitas" nillable="true" type="tns:RegistroCitas" />
+  <xs:complexType name="ArrayOfDiagnostico">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Diagnostico" nillable="true" type="tns:Diagnostico" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDiagnostico" nillable="true" type="tns:ArrayOfDiagnostico" />
+  <xs:complexType name="Diagnostico">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdCita" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="IdDiagnostico" type="xs:int" />
+      <xs:element minOccurs="0" name="Observaciones" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RegistroCitas" nillable="true" type="tns:RegistroCitas" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Diagnostico" nillable="true" type="tns:Diagnostico" />
+  <xs:complexType name="ArrayOfMedicamento">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Medicamento" nillable="true" type="tns:Medicamento" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMedicamento" nillable="true" type="tns:ArrayOfMedicamento" />
+  <xs:complexType name="Medicamento">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cantidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdCita" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="IdMedicamento" type="xs:int" />
+      <xs:element minOccurs="0" name="Instrucciones" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RegistroCitas" nillable="true" type="tns:RegistroCitas" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Medicamento" nillable="true" type="tns:Medicamento" />
+  <xs:complexType name="MedicoEspecialista">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Especialidades" nillable="true" type="tns:Especialidades" />
+      <xs:element minOccurs="0" name="IdEspecialidad" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="IdmedicoEspecialista" type="xs:int" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RegistroCitas" nillable="true" type="tns:ArrayOfRegistroCitas" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MedicoEspecialista" nillable="true" type="tns:MedicoEspecialista" />
+  <xs:complexType name="Especialidades">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdEspecialidades" type="xs:int" />
+      <xs:element minOccurs="0" name="MedicoEspecialista" nillable="true" type="tns:ArrayOfMedicoEspecialista" />
+      <xs:element minOccurs="0" name="TipoEspecialidad" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Especialidades" nillable="true" type="tns:Especialidades" />
+  <xs:complexType name="ArrayOfMedicoEspecialista">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MedicoEspecialista" nillable="true" type="tns:MedicoEspecialista" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMedicoEspecialista" nillable="true" type="tns:ArrayOfMedicoEspecialista" />
+</xs:schema>

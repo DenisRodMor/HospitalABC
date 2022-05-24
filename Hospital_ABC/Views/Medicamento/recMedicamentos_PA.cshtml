@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Entidades.PA_Medicamentos_MostrarDetalle_Result>
+
+@{
+    ViewBag.Title = "Medicamentos";
+}
+
+<h2>Medicamentos</h2>
+
+<p>
+    @Html.ActionLink("Nuevo", "AgregaMedicamentos_PA")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IdMedicamento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdCita)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cantidad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Instrucciones)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdMedicamento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdCita)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cantidad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Instrucciones)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "ModificaMedicamentos_PA", new { id = item.IdMedicamento })
+            @Html.ActionLink("Detalles", "DetalleMedicamentos_PA", new { id = item.IdMedicamento })
+            @Html.ActionLink("Eliminar", "EliminarMedicamentos_PA", new { id = item.IdMedicamento })
+        </td>
+    </tr>
+}
+
+</table>

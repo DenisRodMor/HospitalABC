@@ -1,0 +1,61 @@
+﻿@model Entidades.PA_Diagnostico_MostrarDetallexid_Result
+
+@{
+//ViewBag.Title = "EliminarPacientes_PA";
+}
+
+<h2>Eliminar Pacientes</h2>
+
+<h3>Esta seguro(a) de que desea eliminar el registro?</h3>
+<div>
+    @*<h4>PA_Diagnostico_MostrarDetallexid_Result</h4>*@
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdDiagnostico)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdDiagnostico)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdCita)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdCita)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Observaciones)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Observaciones)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm("AccionesEntidades", "Diagnostico", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        @Html.HiddenFor(model => model.IdDiagnostico)
+
+        <div class="form-actions no-color">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="submit" name="submitButton" value="Eliminar"
+                        class="btn btn-primary" title="Eliminar"
+                        data-toggle="tooltip" data-container="body"
+                        data-placement="right">
+                    Eliminar
+
+
+                </button>
+
+            </div>
+            @Html.ActionLink("Volver", "recDiagnostico_PA")
+        </div>
+    }
+</div>
